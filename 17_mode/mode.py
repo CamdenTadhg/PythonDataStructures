@@ -11,3 +11,14 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    count_dict = {}
+    for num in nums:
+        if count_dict.get(num, -1) == -1:
+            count_dict[num] = nums.count(num)
+    highest_value = 0
+    highest_key = ''
+    for key in count_dict.keys():
+        if count_dict[key] > highest_value:
+            highest_value = count_dict[key]
+            highest_key = key
+    return highest_key
