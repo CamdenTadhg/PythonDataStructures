@@ -10,3 +10,10 @@ def same_frequency(num1, num2):
         >>> same_frequency(1212, 2211)
         True
     """
+    num1_list = [int(digit) for digit in str(num1)]
+    num1_list.sort()
+    num2_list = [int(digit) for digit in str(num2)]
+    num2_list.sort()
+    if num1_list == num2_list:
+        return True
+    return False
