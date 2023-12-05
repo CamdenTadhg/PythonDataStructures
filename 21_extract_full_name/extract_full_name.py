@@ -16,6 +16,5 @@ def extract_full_names(people):
     """
     full_names = []
     for person in people:
-        full_name = person['first'] + ' ' + person['last']
-        full_names.append(full_name)
+        full_names.append(person['first'] + ' ' + person['last'])
     return full_names

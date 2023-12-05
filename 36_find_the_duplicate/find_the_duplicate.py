@@ -13,10 +13,8 @@ def find_the_duplicate(nums):
         >>> find_the_duplicate([2, 1, 3, 4]) is None
         True
     """
-    already_visited = []
+
     for num in nums:
-        if num in already_visited:
+        if nums.count(num) == 2:
             return num
-        else:
-            already_visited.append(num)
     return None

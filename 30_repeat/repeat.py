@@ -19,7 +19,6 @@ def repeat(phrase, num):
         True
     """
     
-    if isinstance(num, int):
-        if num >= 0:
-            return phrase * num
+    if isinstance(num, int) and num >= 0:
+        return phrase * num
     return None

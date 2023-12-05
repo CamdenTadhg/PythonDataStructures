@@ -14,5 +14,5 @@ def sum_floats(nums):
     sum = 0
     for value in nums:
         if isinstance(value, float):
-            sum = sum + value
+            sum += value
     return sum

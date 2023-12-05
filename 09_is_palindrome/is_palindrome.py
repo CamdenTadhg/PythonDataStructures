@@ -26,10 +26,6 @@ def is_palindrome(phrase):
     forward_list = list(phrase)
     backward_list = list(phrase)
     backward_list.reverse()
-    index = 0
-    for char in forward_list:
-        if char == backward_list[index]:
-            index = index + 1
-        elif char != backward_list[index]:
-            return False
-    return True
+    if forward_list == backward_list:
+        return True
+    return False

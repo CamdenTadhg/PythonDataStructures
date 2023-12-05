@@ -22,13 +22,13 @@ def sum_up_diagonals(matrix):
     x = 0
     y = 0
     while y < len(matrix):
-        sum = sum + matrix[y][x]
+        sum += matrix[y][x]
         x += 1
         y += 1
     x = len(matrix[0]) - 1
     y = 0
     while y < len(matrix):
-        sum = sum + matrix[y][x]
+        sum += matrix[y][x]
         x -= 1
         y += 1
     return sum

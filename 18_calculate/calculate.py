@@ -38,5 +38,4 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         solution = a / b
     if make_int == True:
         solution = int(solution)
-    solution = str(solution)
     return message + ' ' + solution

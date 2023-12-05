@@ -26,5 +26,4 @@ def partition(lst, fn):
             true.append(value)
         elif not fn(value):
             false.append(value)
-    partition_list = [true, false]
-    return partition_list
+    return [true, false]
